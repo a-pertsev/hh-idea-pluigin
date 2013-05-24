@@ -1,0 +1,38 @@
+<idea-plugin version="2">
+  <id>ru.hh.plugin.XSLReference</id>
+  <name>XSL References</name>
+  <version>1.0</version>
+  <vendor email="oeermanz@gmail.com" url="http://hh.ru">HeadHunter</vendor>
+
+  <description><![CDATA[
+      XSL References resolver.<br>
+      <small>most HTML tags may be used</small>
+      ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <small>most HTML tags may be used</small>
+      ]]>
+  </change-notes>
+
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+      <projectConfigurable implementation="ru.hh.plugin.XSLReferencesSettingsPage"/>
+      <psi.referenceContributor implementation="ru.hh.plugin.XSLPsiReferenceContributor"/>
+      <!--<toolWindow id="Grep" icon="/static/baboon13x13.png" anchor="right" factoryClass="ru.hh.plugin.Grep"/>-->
+  </extensions>
+
+
+</idea-plugin>
